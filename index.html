@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nikoleta</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script type="text/javascript" language="javascript" src="json/data.json"></script> 
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/7.0.2/angular.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+<body>
+
+<header id="header">
+	<div class="row ">
+		<div class="col-md-4 logo">
+			<img src="images/logo.png">
+		</div>
+		<nav class="col-md-4 offset-4 menu">
+			<a href="#about-us">Home</a>
+			<a href="#about">About</a>
+			<a href="#careers">Careers</a>
+			<a href="#team">Team</a>			
+		</nav>
+	</div>
+</header>
+
+
+
+<section id="about-us" class="paralax-scroll">
+	<div class="hero ">
+		<div class="col-md-12 text-center">
+		 	<h1>msgNETCONOMY</h1>		
+			<h2>We are hirinig people</h2>
+		</div>	
+   </div>
+	<div id="about" class="container">
+		<div class="col-md-10 offset-1 text-center text  ">			
+			<h2  >ABOUT US</h2>
+			<hr>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>	
+	</div>
+</section>
+
+
+<section id="careers">
+	<div class="container">
+	  <div class="row ">
+		<div class="col-md-10 offset-1">
+			<div class="title ">
+			   <h3>AVAILABLE POSITIONS</h3>
+			   <hr>
+		    </div>
+
+		  <a href="#" class="toggle"><i class="fas fa-plus"></i> SAP Hybris Java Enerprise Software Developer - Medior/Senior</a>
+          
+          <div class="answer">
+            <p>What will you do</p>
+
+                <ul>
+             	<li>Implement and optimize E-commerce solutions as a part of an agile team (Scrum)</li>
+             	<li>Work with high-quality code using Java, Spring Framework, SAP Hybris and Web technologies</li>
+             	<li>Contribute to international projects by delivering efficient, effective solutions which support client business processes and functional requirements</li>
+             	<li>Improve developer skills through constant contact feedback and teamwork with highly skilled colleagues</li>
+             	<li>Interact with customers and partners regarding functional and technical requirements</li>
+             	<li>Work proactively in a self-empowered Scrum team</li>
+             </ul>
+
+   		</div>
+   
+       <a href="#" class="toggle"><i class="fas fa-plus"></i> SAP Hybris Java Enerprise Software Developer - Junior</a>
+          <div class="answer">
+             <p>What will you do?</p>
+             <ul>
+             	<li>Implement and optimize E-commerce solutions as a part of an agile team (Scrum)</li>
+             	<li>Work with high-quality code using Java, Spring Framework, SAP Hybris and Web technologies</li>
+             	<li>Contribute to international projects by delivering efficient, effective solutions which support client business processes and functional requirements</li>
+             	<li>Improve developer skills through constant contact feedback and teamwork with highly skilled colleagues</li>
+             	<li>Interact with customers and partners regarding functional and technical requirements</li>
+             	<li>Work proactively in a self-empowered Scrum team</li>
+             </ul>
+         </div>
+
+        <a href="#" class="toggle"><i class="fas fa-plus"></i> SAP Hybris Frontdend Developer - Medior/Senior</a>
+          <div class="answer">
+                 <p>What will you do?</p>
+             <ul>
+             	<li>Implement and optimize E-commerce solutions as a part of an agile team (Scrum)</li>
+             	<li>Work with high-quality code using Java, Spring Framework, SAP Hybris and Web technologies</li>
+             	<li>Contribute to international projects by delivering efficient, effective solutions which support client business processes and functional requirements</li>
+             	<li>Improve developer skills through constant contact feedback and teamwork with highly skilled colleagues</li>
+             	<li>Interact with customers and partners regarding functional and technical requirements</li>
+             </ul>
+         </div>    
+   
+           <a href="#" class="toggle"><i class="fas fa-plus"></i> SAP Hybris Frontdend Developer - Junior</a>
+          <div class="answer">
+           <p>What will you do?</p>
+             <ul>
+             	<li>Implement and optimize E-commerce solutions as a part of an agile team (Scrum)</li>
+             	<li>Work with high-quality code using Java, Spring Framework, SAP Hybris and Web technologies</li>
+             	<li>Contribute to international projects by delivering efficient, effective solutions which support client business processes and functional requirements</li>
+             	<li>Improve developer skills through constant contact feedback and teamwork with highly skilled colleagues</li>
+             	<li>Interact with customers and partners regarding functional and technical requirements</li>
+             </ul>
+           </div>
+		</div>		
+	  </div>
+	</div>
+</section>
+
+
+<section id="team">
+	<div class="container">
+	  <div class="row text-center box">
+		<div class="col-md-12">
+			<div class="title">
+				<h3>MEET THE TEAM</h3>
+				<hr>
+		   </div>
+		</div>
+
+
+
+
+
+<div ng-app="myApp" ng-controller="jsondata">
+	<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/1.png">
+          <div ng-repeat="team_member in team_members" >	
+			<p><b>{{team_member.name}}</b></p>
+			<p>{{team_member.role}}</p>
+			</div>
+		</div>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>		
+		
+</div>
+		<!-- <div class="animatable fadeInUp col-md-3 box">
+			<img src="img/4.png">
+			<p><b>Filip Tanasijevic</b></p>
+			<p>Backend Developer</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+		</div>
+
+		<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/7.png">
+			<p><b>Rastko Anicic</b></p>
+			<p>Product Owner</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+		</div>
+
+		<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/3.png">
+			<p><b>Ivan Ilic</b></p>
+			<p>Frontend Developer</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+		</div>
+
+		<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/13.png">
+			<p><b>Katarina Surla</b></p>
+			<p>Scrum Master</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+		</div>
+	
+
+		<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/11.png">
+			<p><b>Marko Maric</b></p>
+			<p>Frontend Developer</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+			
+		</div>
+
+		<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/5.png">
+			<p><b>Srdjan Damjanovic</b></p>
+			<p>Frontend Developer</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+			
+		</div>
+
+		<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/14.png">
+			<p><b>Ana Milovanovic</b></p>
+			<p>Consultant</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+		</div>
+	
+	
+
+		<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/15.png">
+			<p><b>Nikola Radulovic</b></p>
+			<p>Backend Developer</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+			
+		</div>
+
+		<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/12.png">
+			<p><b>Vlajko Maric</b></p>
+			<p>Backend Developer</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+
+			
+		</div>
+
+		<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/10.png">
+			<p><b>Danilo Garovic</b></p>
+			<p>Frontend Developer</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+			
+		</div>
+
+		<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/16.png">
+			<p><b>Andrijana Mionic</b></p>
+			<p>Frontend Developer</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+			
+		</div>
+
+	
+
+		<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/17.png">
+			<p><b>Lazar Deretic</b></p>
+			<p>Software Architect</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+		</div>
+
+		<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/18.png">
+			<p><b>Ana Radovanovic</b></p>
+			<p>Web Designer</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+			
+		</div>
+
+		<div class="animatable fadeInUp col-md-3 box">
+			<img src="img/19.png">
+			<p><b>Sofija Trajkovic</b></p>
+			<p>QA</p>
+			<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+			<a href=""><i class="fab fa-facebook-square fa-2x"></i></a>			
+		</div>	 -->
+
+		</div>
+	 </div>
+   
+</section>
+
+<footer>
+	<div class="text-center">
+		<p>&copy;2018, msgNETCONOMY</p>		
+	</div>
+</footer>
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

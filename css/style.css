@@ -1,0 +1,257 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+h2 {
+	color:white;
+	font-size:30px;
+}
+
+
+h1 {
+	color:white;
+	font-size:60px;
+}
+
+h3 {
+	color: #0080c2;
+}
+
+.title {
+	text-align: center;
+	margin:80px 0px 40px 0px;
+}
+
+hr {
+	height: 2px;
+	width: 100px;
+	margin:30px auto;
+}
+
+/*-----------header style starts here------------*/
+header {
+	padding:30px;
+	transition: transform .2s;
+    background-color: white;
+}
+.sticky {
+	  transition: transform .2s;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  padding: 20px;
+	  z-index: 10;
+}
+
+.logo img {
+	width: 300px;
+}
+
+.menu {
+	text-align: right;
+}
+.menu a {
+	margin-left: 40px;
+}
+/*-----------header style ends here------------*/
+
+
+
+
+/*-----------style for section About us starts here---------------*/
+
+#about-us {
+	background-image: url('../images/about.jpg');
+	height: 100vh;
+}
+#about-us p {
+	color: white;
+}
+.text {
+	padding: 6%;
+}
+.paralax-scroll{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+/*.....style for hero is here..........*/
+
+.hero {
+	background-color: #0090cc;
+	height: 50vh;
+	z-index: 2;
+	padding:8%;
+}
+/*-----------style for section hero About us ends here------------*/
+
+
+
+
+
+/*-----------style for section Available Position starts here------------*/
+
+#careers {
+	background-color: #f2f2f1;
+	padding-bottom: 60px;
+}
+
+#career a {
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.answer {
+	display: none;
+	padding: 12px 20px 0 30px;	
+}
+
+.answer p {
+	font-size: 18px;
+	line-height: 17px;	
+	color: grey;
+	margin-left:10px;
+	font-weight: 600;
+}
+
+.answer ul li {
+	font-size: 18px;
+	line-height: 25px;	
+	color: grey;
+	margin-left:60px;	
+}
+
+.toggle {
+	text-decoration: none;
+	font-size: 18px;
+	padding: 10px 30px;
+	line-height: 20px;
+	display: block;
+	width: 590px;	
+}
+
+/*-----------style for section Available Position ends here------------*/
+
+
+
+/*-----------style for section Meet the team start here------------*/
+#team p {
+	color: grey;
+    line-height: 1.0;
+}
+
+#team img {
+	border-radius: 50%;
+	width:200px;
+	height: 200px;
+    transition: transform .2s; 
+    margin-bottom: 15px;
+}
+
+#team img:hover {
+	transform: scale(1.1); 
+}
+
+.box {
+	padding: 10px;
+}
+
+.animatable {
+  visibility: hidden;
+  -webkit-animation-play-state: paused;   
+  -moz-animation-play-state: paused;     
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;   
+  animation-play-state: paused; 
+}
+.animated {
+  visibility: visible;
+   -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(20px);
+	}100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+
+.animated.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
+/*-----------style for section Meet the team end here------------*/
+
+
+
+
+/*footer style*/
+footer{
+	background-color: #0090cc;
+	height: auto;
+}
+
+footer p{
+	color: white;
+	padding:30px;
+}
